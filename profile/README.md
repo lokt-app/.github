@@ -1,227 +1,298 @@
 <div align="center">
-  <img src="../profile/Lokt Logo - App Icon.png" alt="LOKT.app Logo" width="400"/>
-  
-  # LOKT.app
-  
-  ### Less Screen. More Time.
-  
-  **Empowering families and schools with smart digital wellness solutions**
-  
-  [![Angular](https://img.shields.io/badge/Angular-19-red.svg)](https://angular.io/)
-  [![NativeScript](https://img.shields.io/badge/NativeScript-8.9-blue.svg)](https://nativescript.org/)
-  [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2-green.svg)](https://spring.io/projects/spring-boot)
-  [![License](https://img.shields.io/badge/License-Proprietary-yellow.svg)]()
-  
+
+![LOKT.app Logo](../profile/Lokt%20Logo%20-%20App%20Icon.png)
+
+# **Less Screen. More Time.** ⏰
+
+### *Empowering families and schools to thrive in the digital age*
+
+<br>
+
+[![Visit LOKT.app](https://img.shields.io/badge/🌐_Visit-LOKT.app-5B21B6?style=for-the-badge&labelColor=7C3AED)](https://lokt.app)
+[![For Schools](https://img.shields.io/badge/🏫_For-Schools-059669?style=for-the-badge&labelColor=10B981)](https://lokt.app/schools)
+[![Contact Us](https://img.shields.io/badge/✉️_Contact-Us-DC2626?style=for-the-badge&labelColor=EF4444)](mailto:contact@lokt.app)
+
+<br>
+
+---
+
 </div>
 
----
+<br>
 
-## 🌟 About LOKT.app
+## 💜 **What is LOKT.app?**
 
-LOKT.app is a comprehensive digital wellness platform designed to help families and educational institutions create healthier relationships with technology. Our mission is to provide powerful, intuitive tools that promote balanced screen time and meaningful real-world connections.
+In a world where screens dominate our attention, **LOKT.app** helps families and schools create **healthier digital habits** without the battle. We believe technology should bring us closer together—not pull us apart.
 
-### Our Vision
-
-In an increasingly digital world, we believe technology should enhance—not replace—human connection. LOKT.app empowers parents, educators, and children to take control of their digital lives through smart parental controls, educational management systems, and family engagement tools.
-
----
-
-## 🚀 Our Products
-
-### 📱 LOKT.app Family
-
-**The complete family digital wellness solution**
-
-[Visit LOKT.app Family →](https://lokt.app/)
-
-LOKT.app Family helps parents and children build healthy digital habits together. Our intuitive mobile app makes it easy to manage screen time, set age-appropriate boundaries, and foster positive relationships with technology—all while keeping families connected.
-
-#### Key Features
-- 👨‍👩‍👧‍👦 **Family-First Design** - Separate experiences for parents and kids that work together seamlessly
-- 📊 **Smart Insights** - Understand your family's digital habits with clear, actionable reports
-- ⏰ **Screen Time Management** - Set healthy limits that adapt to your family's needs
-- 🎯 **Reward & Motivate** - Turn good habits into achievements with our engaging reward system
-- 🔒 **Age-Appropriate Controls** - Keep kids safe with content filtering tailored to their age
-- 💬 **Stay Connected** - Real-time communication keeps your family in sync
-
-#### Technology Stack
-- **Mobile Framework**: NativeScript 8.9 with Angular 18
-- **Platform**: iOS & Android (cross-platform)
-- **Backend Integration**: Real-time sync with microservices
-- **Security**: Firebase authentication, encrypted data storage
-
----
-
-### 🏫 LOKT.app School
-
-**Digital wellness management for educational institutions**
-
-[Visit LOKT.app School →](https://lokt.app/schools)
-
-LOKT.app School empowers educators and administrators to create safe, focused digital learning environments. Our comprehensive platform helps schools manage devices, implement policies, and ensure students stay on task—whether in the classroom or learning remotely.
-
-#### Key Features
-- 🏢 **Enterprise-Grade Management** - Scalable from single classrooms to entire school districts
-- 👥 **Centralized Control** - Manage students, teachers, and devices from one intuitive dashboard
-- 🛡️ **Policy Enforcement** - Implement and monitor content restrictions across all school devices
-- 📱 **Device Fleet Management** - Track, configure, and secure school-issued devices at scale
-- 📊 **Usage Analytics** - Gain insights into digital learning patterns and compliance
-- 🎓 **Flexible Organization** - Group by grade, class, department, or custom categories
-
-#### Technology Stack
-- **Frontend**: Angular 19 with Angular Material (Azure Blue theme)
-- **State Management**: NgRx for scalable state architecture
-- **Backend**: RESTful microservices integration
-- **Deployment**: Docker containers with AWS ECR
-- **Security**: JWT authentication, role-based access control
-
----
-
-### ⚙️ LOKT.app Services
-
-**Enterprise-grade microservices backbone**
-
-LOKT.app Services is the robust backend platform powering all LOKT.app products. Built on modern microservices architecture with CQRS and Event Sourcing patterns, it ensures scalability, reliability, and real-time responsiveness.
-
-#### Architecture Highlights
-- 🏗️ **CQRS Pattern** - Separation of command and query responsibilities
-- 📝 **Event Sourcing** - Complete audit trail with Axon Framework
-- 🔄 **Microservices** - Domain-driven, independently deployable services
-- 🗄️ **MongoDB** - Event store and query projections
-- 🔐 **JWT Security** - Token-based authentication across services
-- 📊 **Observability** - Spring Boot Admin, Prometheus metrics
-
-#### Service Domains
-- **Account Services** - User management, authentication, payments
-- **Task Services** - Task creation, scheduling, and execution
-- **Device Services** - Device registration and control
-- **Restriction Services** - Content filtering and policy enforcement
-- **Notification Services** - Real-time webhooks and push notifications
-
-#### Technology Stack
-- **Framework**: Spring Boot 3.2 with Java 17
-- **Event Sourcing**: Axon Framework 4.9
-- **Database**: MongoDB (event store + projections)
-- **Deployment**: Docker with multi-stage builds
-- **Monitoring**: Spring Boot Admin, Micrometer, Prometheus
-
-[Learn more about LOKT.app Services →](https://github.com/lokt-app/digi-services)
-
----
-
-## 🏗️ Platform Architecture
-
-```mermaid
-graph TB
-    subgraph "Mobile Apps"
-        A[LOKT.app Family - iOS]
-        B[LOKT.app Family - Android]
-    end
-    
-    subgraph "Web Applications"
-        C[LOKT.app School Portal]
-    end
-    
-    subgraph "Backend Services"
-        D[Account Services]
-        E[Task Services]
-        F[Device Services]
-        G[Restriction Services]
-        H[Notification Services]
-    end
-    
-    subgraph "Data Layer"
-        I[MongoDB Event Store]
-        J[Query Projections]
-    end
-    
-    A --> D
-    B --> D
-    C --> D
-    D --> I
-    E --> I
-    F --> I
-    G --> I
-    H --> I
-    I --> J
-```
-
----
-
-## 🎯 Why Choose LOKT.app?
-
-### For Families
-- ✅ **Simple & Intuitive** - Get started in minutes, no technical expertise needed
-- ✅ **Privacy Protected** - Your family's data is encrypted and never sold
-- ✅ **Positive Parenting** - Build healthy habits through encouragement, not just restriction
-- ✅ **Works Everywhere** - Seamless experience across iOS and Android devices
-- ✅ **Affordable** - Powerful features without breaking the family budget
-
-### For Schools & Institutions
-- ✅ **Enterprise Scale** - From small schools to large multi-campus districts
-- ✅ **Customizable Policies** - Tailor digital rules for different grades and departments
-- ✅ **Complete Visibility** - Monitor and manage all devices from a single platform
-- ✅ **Professional Support** - Dedicated assistance for IT administrators and educators
-- ✅ **Proven Technology** - Built on enterprise-grade infrastructure for reliability
-
-### For Developers
-- ✅ **Microservices** - Independent, scalable service architecture
-- ✅ **Event-Driven** - CQRS and Event Sourcing for reliability
-- ✅ **Well-Documented** - Comprehensive documentation for each component
-- ✅ **Modern Tech** - Spring Boot, Angular, NativeScript, MongoDB
-
----
-
-## 🛠️ Technology Ecosystem
+Our platform combines **smart parental controls**, **school management tools**, and **positive reinforcement** to help everyone develop a balanced relationship with technology.
 
 <div align="center">
 
-### Frontend
-![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+### 🎯 **Our Mission**
+
+*To empower parents and educators with intuitive tools that promote digital wellness,*  
+*meaningful connections, and healthy screen time habits for the next generation.*
+
+</div>
+
+<br>
+
+---
+
+<br>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+## 👨‍👩‍👧‍👦 **LOKT.app Family**
+
+### *Digital wellness for modern families*
+
+<br>
+
+<div align="center">
+
+[![Download Now](https://img.shields.io/badge/Get_Started-Free_Trial-7C3AED?style=for-the-badge)](https://lokt.app)
+
+</div>
+
+<br>
+
+Help your family build healthy digital habits **together**. LOKT.app Family makes screen time management simple, positive, and effective—without the constant battles.
+
+<br>
+
+### ✨ **What Makes Us Different**
+
+🎨 **Beautiful & Intuitive**  
+Designed for real families—parents and kids both love using it
+
+📊 **Smart Insights**  
+Understand patterns, not just numbers. Get actionable recommendations.
+
+🎁 **Positive Rewards**  
+Motivate good habits with achievements, not just restrictions
+
+🔒 **Age-Appropriate**  
+Controls that grow with your child
+
+💬 **Stay Connected**  
+Real-time family chat and notifications
+
+⚡ **Works Everywhere**  
+Seamless on iOS and Android
+
+<br>
+
+### 🎯 **Perfect For**
+- Parents who want balance, not battles
+- Families establishing healthy digital boundaries
+- Anyone seeking a positive approach to screen time
+
+<br>
+
+</td>
+<td width="50%" valign="top">
+
+## 🏫 **LOKT.app School**
+
+### *Digital wellness at scale for education*
+
+<br>
+
+<div align="center">
+
+[![Schedule Demo](https://img.shields.io/badge/Book_a-Demo-10B981?style=for-the-badge)](https://lokt.app/schools)
+
+</div>
+
+<br>
+
+Give your institution the power to create **safe, focused digital learning environments**. Manage devices, enforce policies, and monitor compliance—all from one powerful platform.
+
+<br>
+
+### 🚀 **Enterprise Features**
+
+🏢 **Scale with Confidence**  
+From single classrooms to entire districts
+
+👥 **Centralized Control**  
+Manage thousands of users and devices effortlessly
+
+🛡️ **Policy Enforcement**  
+Set it once, enforce everywhere automatically
+
+📱 **Device Fleet Management**  
+Track, configure, and secure at scale
+
+📊 **Compliance Analytics**  
+Real-time insights into usage and adherence
+
+⚙️ **Flexible Organization**  
+Custom groups for any structure
+
+<br>
+
+### 🎯 **Trusted By**
+- K-12 schools and districts
+- Higher education institutions
+- Educational technology administrators
+- IT departments managing student devices
+
+<br>
+
+</td>
+</tr>
+</table>
+
+<br>
+
+---
+
+<br>
+
+<div align="center">
+
+## 🏗️ **Built on Enterprise-Grade Technology**
+
+*Reliable. Scalable. Secure.*
+
+<br>
+
+### Frontend Excellence
+![Angular](https://img.shields.io/badge/Angular_19-DD0031?style=for-the-badge&logo=angular&logoColor=white)
 ![NativeScript](https://img.shields.io/badge/NativeScript-3655FF?style=for-the-badge&logo=nativescript&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Material UI](https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white)
+![Material](https://img.shields.io/badge/Material_UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white)
 
-### Backend
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+### Backend Power
+![Spring Boot](https://img.shields.io/badge/Spring_Boot_3-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
+![Java](https://img.shields.io/badge/Java_17-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![Microservices](https://img.shields.io/badge/Microservices-FF6B6B?style=for-the-badge&logo=amazon-api-gateway&logoColor=white)
 
-### DevOps
+### Infrastructure
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)
-![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
 
 </div>
 
----
-
-## 📞 Contact & Support
-
-### Get in Touch
-- 📧 **Email**: contact@lokt.app
-- 🌐 **Website**: [https://lokt.app](https://lokt.app)
-- 💼 **Business Inquiries**: [Contact Us]
-
-### Stay Connected
-Follow us for updates, tips, and announcements about digital wellness and LOKT.app platform updates.
+<br>
 
 ---
 
-## 📄 License
-
-LOKT.app is proprietary software. All rights reserved.
-
-For licensing inquiries, please contact: contact@lokt.app
-
----
+<br>
 
 <div align="center">
-  
-### Built with ❤️ by the LOKT.app Team
 
-**Empowering families and schools to thrive in the digital age**
+## 🌟 **Why Families & Schools Choose LOKT.app**
 
-[Website](https://lokt.app) • [Documentation] • [Support]
+<br>
+
+</div>
+
+<table>
+<tr>
+<td width="33%" align="center">
+
+### 🎨 **Beautiful Design**
+
+Intuitive interfaces that users actually *want* to use. No complicated menus or technical jargon.
+
+</td>
+<td width="33%" align="center">
+
+### 🔒 **Privacy First**
+
+Your data stays yours. Enterprise-grade security with zero data selling. Ever.
+
+</td>
+<td width="33%" align="center">
+
+### 💡 **Positive Approach**
+
+Build healthy habits through encouragement, insights, and rewards—not just restrictions.
+
+</td>
+</tr>
+<tr>
+<td width="33%" align="center">
+
+### ⚡ **Lightning Fast**
+
+Real-time sync across all devices. Changes take effect instantly.
+
+</td>
+<td width="33%" align="center">
+
+### 📈 **Proven Results**
+
+Trusted by thousands of families and schools to create healthier digital habits.
+
+</td>
+<td width="33%" align="center">
+
+### 🛟 **Expert Support**
+
+Dedicated support team ready to help families and institutions succeed.
+
+</td>
+</tr>
+</table>
+
+<br>
+
+---
+
+<br>
+
+<div align="center">
+
+## 🎯 **Ready to Transform Digital Wellness?**
+
+<br>
+
+### For Families
+
+Start building healthier screen time habits today—free trial included.
+
+[![Get Started Free](https://img.shields.io/badge/🚀_Start_Free_Trial-For_Families-7C3AED?style=for-the-badge&labelColor=8B5CF6)](https://lokt.app)
+
+<br>
+
+### For Schools & Institutions
+
+See how LOKT.app can transform digital management at your institution.
+
+[![Book a Demo](https://img.shields.io/badge/📅_Schedule_Demo-For_Schools-10B981?style=for-the-badge&labelColor=34D399)](https://lokt.app/schools)
+
+<br>
+
+---
+
+<br>
+
+## 📞 **Get in Touch**
+
+We'd love to hear from you!
+
+**📧 Email:** [contact@lokt.app](mailto:contact@lokt.app)  
+**🌐 Website:** [lokt.app](https://lokt.app)  
+**🏫 Schools:** [lokt.app/schools](https://lokt.app/schools)
+
+<br>
+
+---
+
+<br>
+
+<sub>**LOKT.app** is proprietary software. © 2025 All rights reserved.</sub>
+
+<br>
+
+**Built with ❤️ for families and schools everywhere**
 
 </div>
