@@ -199,7 +199,7 @@ graph TB
 ## 📞 Contact & Support
 
 ### Get in Touch
-- 📧 **Email**: it@digitheapp.com
+- 📧 **Email**: contact@lokt.app
 - 🌐 **Website**: [https://lokt.app](https://lokt.app)
 - 💼 **Business Inquiries**: [Contact Us]
 
@@ -212,7 +212,7 @@ Follow us for updates, tips, and announcements about digital wellness and LOKT.a
 
 LOKT.app is proprietary software. All rights reserved.
 
-For licensing inquiries, please contact: it@digitheapp.com
+For licensing inquiries, please contact: contact@lokt.app
 
 ---
 
