@@ -196,28 +196,6 @@ graph TB
 
 ---
 
-## 📚 Documentation
-
-Each product has comprehensive documentation in its respective repository:
-
-- **[LOKT.app Family Documentation](https://github.com/lokt-app/digi-the-app)** - Mobile app setup, features, and development
-- **[LOKT.app School Documentation](https://github.com/lokt-app/digi-school)** - Web portal configuration and administration
-- **[LOKT.app Services Documentation](https://github.com/lokt-app/digi-services)** - API reference and microservices architecture
-
----
-
-## 🤝 Contributing
-
-We welcome contributions to make LOKT.app even better! Whether you're fixing bugs, improving documentation, or proposing new features, your input is valuable.
-
-### How to Contribute
-1. Check out our individual repository guidelines
-2. Follow our coding standards and best practices
-3. Submit pull requests with clear descriptions
-4. Participate in code reviews
-
----
-
 ## 📞 Contact & Support
 
 ### Get in Touch
