@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="profile/Lokt Logo - App Icon.png" alt="LOKT.app Logo" width="400"/>
+  <img src="../profile/Lokt Logo - App Icon.png" alt="LOKT.app Logo" width="400"/>
   
   # LOKT.app
   
