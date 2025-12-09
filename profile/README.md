@@ -1,6 +1,6 @@
 <div align="center">
 
-![LOKT.app Logo](../profile/Lokt%20Logo%20-%20App%20Icon.png)
+<img src="../profile/Lokt%20Logo%20-%20App%20Icon.png" alt="LOKT.app Logo" width="200"/>
 
 # **Less Screen. More Time.** ⏰
 
